@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            padding: 10px;
+            background-color: #f4f4f4;
+        }
+        .header {
+            padding: 10px;
+            background: #ddd;
+        }
+        .logo-left {
+            float: left;
+            width: 300px;
+            margin-top: 5px;
+        }
+        .logo-right {
+            float: right;
+            width: 50px;
+            margin-top: 20px;
+            margin-right: 30px;
+        }
+        .header a {
+            float: right;
+            display: block;
+            color: #c51b1b;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+        a.no-style {
+            all: unset;
+            display: inline;
+            cursor: pointer;
+}
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            /*background-color: #f1f1f1;;*/
+            padding-left: 20px;
+        }
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            height: auto;
+        }
+
+        .profile-row {
+            display: flex;
+            align-items: stretch;
+            gap: 20px; /* 이미지와 텍스트 사이 간격 */
+            height: 100%;
+        }
+
+        .profile-img {
+            height: 100%;
+            width: auto;
+            object-fit: cover;
+            flex-shrink: 0;
+            max-height: 300px; /* 이미지 최대 높이 설정 */
+        }
+
+
+        .profile-text {
+            flex: 1;
+        }
+
+
+        .fakeimg-link {
+            text-decoration: none; /* 링크 밑줄 제거 */
+            display: block;         /* 박스 전체를 클릭 가능하게 만듦 */
+            margin-bottom: 10px;
+        }
+
+        .fakeimg-link .fakeimg {
+            transition: background-color 0.3s;
+            cursor: pointer;
+            color: black;
+        }
+
+        .fakeimg-link:hover .fakeimg {
+            background-color: #888;  /* hover 시 색 변경 */
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .footer {
+            background-color: #d3d3d3;
+            padding: 15px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .footer-container {
+            display: flex;
+            justify-content: left;
+            gap: 100px;
+            flex-wrap: wrap;
+            text-align: left;
+            margin-left: 20px;
+        }
+        .footer-section h3 {
+            margin-bottom: 10px;
+        }
+        .footer-section a {
+            text-decoration: none;
+            color: black;
+        }
+        .footer-section a:hover {
+            text-decoration: underline;
+        }
+        @media screen and (max-width: 800px) {
+            .leftcolumn, .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+
+        }
+
+        @media screen and (max-width: 800px) {
+            .leftcolumn, .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+
+            .profile-row {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .profile-img {
+                width: 100%;
+                height: auto;
+                max-width: 300px;
+            }
+
+            .profile-text {
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="img/logo.png" alt="Logo" class="logo-left">
+        <a href="index2.html" class="no-style"><img src="img/user.png" alt="Logo" class="logo-right"></a>
+
+        <a href="regester.html">회원가입</a>
+        <a href="download.html">다운로드</a>
+        <br><br><br><br><br>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+
+
+            <div class="card">
+                <div class="profile-row">
+                    <img src="img/pf1.png" class="profile-img">
+                    <div class="profile-text">
+                        <h2>유령서점</h2>
+                        <h5>데뷔 | 2024년 4월 24일 Single &lt;별의 피가 흐르는 아이들&gt;</h5>
+                        <p>
+                            유령서점(Ghost Book Store)은 몽환적인 사운드와 감성적인 가사로 주목받는 대한민국 인디 밴드입니다. 
+                            2024년 4월 24일 싱글 &lt;별의 피가 흐르는 아이들&gt;로 데뷔했으며, 드림팝, 록, 일렉트로닉 등 다양한 장르를 아우르는 음악을 선보입니다. 
+                            멤버들은 각자의 음악적 색깔을 바탕으로 독특한 분위기와 서정적인 멜로디를 만들어내며, 청춘과 상상, 일상 속의 환상을 노래합니다. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="profile-row">
+                    <img src="img/pf2.jpg" class="profile-img">
+                    <div class="profile-text">
+                        <h2>Erotic Worms Exhibition</h2>
+                        <h5>데뷔 | 2023년 11월 2일 EP &lt;아나토미&gt;</h5>
+                        <p>
+                            사랑과 미움, 행복과 비통함, 부끄러움과 자신감 넘치는 미소를 두른 잠들기 전의 상상과도 같은 인디팝 밴드. 
+                            송라이팅과 기타를 담당한 안현우, 베이시스트 김예지, 드러머 안상원, 보컬리스트 아니돈노로 구성된 부산의 4인조 그룹입니다.
+                            약어로는 EWE라 쓰이며 이위라고도 불립니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="profile-row">
+                    <img src="img/pf3.jpg" class="profile-img">
+                    <div class="profile-text">
+                        <h2>신인류</h2>
+                        <h5>데뷔 | 2018년 9월 26일 Single &lt;너의 한마디&gt;</h5>
+                        <p>
+                            신인류는 2018년 결성된 대한민국의 인디 밴드로, 감성적인 멜로디와 진솔한 가사로 주목받고 있습니다. 
+                            신온유(보컬), 문정환(베이스), 하형언(키보드)가 멤버로 활동합니다. 
+                            데뷔 싱글 &lt;너의 한마디&gt;를 시작으로 다양한 공연과 음반 활동을 이어가고 있으며, 일상과 청춘의 이야기를 섬세하게 풀어내는 음악으로 팬들과 소통하고 있습니다. 
+                            몽환적이면서도 따뜻한 사운드가 특징이며, 꾸준히 새로운 음악적 시도를 선보이고 있습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="profile-row">
+                    <img src="img/pf4.png" class="profile-img">
+                    <div class="profile-text">
+                        <h2>TRPP</h2>
+                        <h5>데뷔 | 2021년 5월 28일 Single &lt;Pause&gt;</h5>
+                        <p>
+                            집 없이 유랑하며 떠돌이 인생을 살아온 중국계 프랑스인 멤버 Chi-Chi Cliché
+                            삼대째 이어온 라멘집 계승을 포기하고 한국이 좋아 무작정 서울 생활을 시작한 일본인 록 마니아 Furukawa Yukio
+                            본명도 잊은 채 모든 현실을 가상현실이라 믿는 국적불명의 Elephant 999
+                            위 셋이 모여 결성한 밴드.
+                            ...라고는 하는데, 매직스트로베리사운드 소속의 싱어송라이터 윤지영, 일로와이로의 강원우, 바이 바이 배드맨의 Gila(정봉길)라는 설이 유력하지만 아직 확인된 바는 없다고 한다(...)
+                            멤버들 모두가 기타, 보컬, 베이스를 맡고 있다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="profile-row">
+                    <img src="img/pf5.png" class="profile-img">
+                    <div class="profile-text">
+                        <h2>바이바이배드맨</h2>
+                        <h5>데뷔 | 2011년 1월 7일 EP &lt;Bye Bye Badman&gt;</h5>
+                        <p>
+                            바이바이배드맨(Bye Bye Badman)은 2011년 결성된 대한민국의 인디 록 밴드입니다. 
+                            브릿팝과 슈게이징, 얼터너티브 록 등 다양한 장르를 기반으로 한 세련된 사운드와 감각적인 멜로디로 주목받았습니다. 
+                            데뷔 EP &lt;Bye Bye Badman&gt;을 시작으로 &lt;Light Beside You&gt;, &lt;Authentic&gt; 등 여러 앨범을 발표했으며, 
+                            감성적인 가사와 몽환적인 분위기의 음악으로 많은 팬층을 확보하고 있습니다. 정봉길 (메인 보컬, 기타), 이루리 (베이스), 구름 (키보드, 코러스) 3인 체제로 활동합니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="rightcolumn">
+            <div class="card">
+                <h3>Main Menu</h3>
+                <a href="index.html" class="fakeimg-link">
+                    <div class="fakeimg">아티스트 소개</div></a>
+
+                <a href="album.html" class="fakeimg-link">
+                    <div class="fakeimg">앨범 소개</div></a>
+
+                <a href="poster.html" class="fakeimg-link">
+                    <div class="fakeimg">공연 정보</div></a>
+
+                <a href="calendar.html" class="fakeimg-link">
+                    <div class="fakeimg">공연 캘린더</div></a>
+
+                <a href="community.html" class="fakeimg-link">
+                    <div class="fakeimg">커뮤니티</div></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Help</h3>
+                <p><a href="support.html">Support</a></p>
+                <p><a href="guidelines.html">Guidelines</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Language</h3>
+                <p><a href="index.html">Korean</a></p>
+                <p><a href="index_en.html">English</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

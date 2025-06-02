@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            padding: 10px;
+            background-color: #f4f4f4;
+        }
+        .header {
+            padding: 10px;
+            background: #ddd;
+        }
+        .logo-left {
+            float: left;
+            width: 300px;
+            margin-top: 5px;
+        }
+        .logo-right {
+            float: right;
+            width: 50px;
+            margin-top: 20px;
+            margin-right: 30px;
+        }
+        .header a {
+            float: right;
+            display: block;
+            color: #c51b1b;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+        a.no-style {
+            all: unset;
+            display: inline;
+            cursor: pointer;
+}
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            /*background-color: #f1f1f1;;*/
+            padding-left: 20px;
+        }
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            height: auto;
+        }
+
+        .profile-row {
+            display: flex;
+            align-items: stretch;
+            gap: 20px; /* 이미지와 텍스트 사이 간격 */
+            height: 100%;
+        }
+
+        .profile-img {
+            height: 100%;
+            width: auto;
+            object-fit: cover;
+            flex-shrink: 0;
+            max-height: 300px; /* 이미지 최대 높이 설정 */
+        }
+
+
+        .profile-text {
+            flex: 1;
+        }
+
+
+        .fakeimg-link {
+            text-decoration: none; /* 링크 밑줄 제거 */
+            display: block;         /* 박스 전체를 클릭 가능하게 만듦 */
+            margin-bottom: 10px;
+        }
+
+        .fakeimg-link .fakeimg {
+            transition: background-color 0.3s;
+            cursor: pointer;
+            color: black;
+        }
+
+        .fakeimg-link:hover .fakeimg {
+            background-color: #888;  /* hover 시 색 변경 */
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .footer {
+            background-color: #d3d3d3;
+            padding: 15px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .footer-container {
+            display: flex;
+            justify-content: left;
+            gap: 100px;
+            flex-wrap: wrap;
+            text-align: left;
+            margin-left: 20px;
+        }
+        .footer-section h3 {
+            margin-bottom: 10px;
+        }
+        .footer-section a {
+            text-decoration: none;
+            color: black;
+        }
+        .footer-section a:hover {
+            text-decoration: underline;
+        }
+        @media screen and (max-width: 800px) {
+            .leftcolumn, .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+
+        }
+
+        @media screen and (max-width: 800px) {
+            .leftcolumn, .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+
+            .profile-row {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .profile-img {
+                width: 100%;
+                height: auto;
+                max-width: 300px;
+            }
+
+            .profile-text {
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="img/logo.png" alt="Logo" class="logo-left">
+        <a href="index2.html" class="no-style"><img src="img/user.png" alt="Logo" class="logo-right"></a>
+
+        <a href="regester.html">Register</a>
+        <a href="download.html">Download</a>
+        <br><br><br><br><br>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+
+
+            <div class="card">
+                <div class="profile-row">
+                    <img src="img/pf1.png" class="profile-img">
+                    <div class="profile-text">
+                        <h2>Ghost Book Store</h2>
+                        <h5>Debut | April 24, 2024, Single &lt;Children with the Blood of Stars&gt;</h5>
+                        <p>
+                            Ghost Book Store is a South Korean indie band known for their dreamy sound and emotional lyrics. 
+                            They debuted on April 24, 2024, with the single &lt;Children with the Blood of Stars&gt;, showcasing music that spans various genres such as dream pop, rock, and electronic. 
+                            The members create a unique atmosphere and lyrical melodies based on their individual musical styles, singing about youth, imagination, and the fantasies within everyday life.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="profile-row">
+                    <img src="img/pf2.jpg" class="profile-img">
+                    <div class="profile-text">
+                        <h2>Erotic Worms Exhibition</h2>
+                        <h5>Debut | November 2, 2023, EP &lt;Anatomy&gt;</h5>
+                        <p>
+                            An indie pop band reminiscent of pre-sleep imaginations, wrapped in love and hate, happiness and sorrow, shame and confident smiles. 
+                            Composed of Hyunwoo Ahn (songwriting and guitar), Yeji Kim (bassist), Sangwon Ahn (drummer), and Anidonno (vocalist), this is a four-member group based in Busan.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="profile-row">
+                    <img src="img/pf3.jpg" class="profile-img">
+                    <div class="profile-text">
+                        <h2>Shin In Ryu</h2>
+                        <h5>Debut | September 26, 2018, Single &lt;Your Words&gt;</h5>
+                        <p>
+                            Shin Inryu is a South Korean indie band formed in 2018, gaining attention for their emotional melodies and sincere lyrics. 
+                            The band consists of members Shin Onyu (vocal), Moon Junghwan (bass), and Ha Hyungeon (keyboard). 
+                            Starting with their debut single &lt;Your Words&gt;, they have continued to perform and release music, delicately portraying stories of everyday life and youth. 
+                            Their music is characterized by a dreamy yet warm sound, and they consistently present new musical experiments.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="profile-row">
+                    <img src="img/pf4.png" class="profile-img">
+                    <div class="profile-text">
+                        <h2>TRPP</h2>
+                        <h5>Debut | May 28, 2021, Single &lt;Pause&gt;</h5>
+                        <p>
+                            Chi-Chi Cliché, a Chinese-French member who has lived a nomadic life without a home. 
+                            Furukawa Yukio, a Japanese rock enthusiast who gave up inheriting a three-generation ramen shop and started living in Seoul out of love for Korea. 
+                            Elephant 999, a stateless individual who believes all reality is virtual reality and has forgotten their real name. 
+                            These three came together to form a band. 
+                            ...Or so they say, but it is widely speculated that the members are singer-songwriter Yoon Ji-young from Magic Strawberry Sound, Kang Won-woo from Illoiro, and Gila (Jung Bong-gil) from Bye Bye Badman. However, this has not been confirmed yet (...). 
+                            All members take on roles as guitarists, vocalists, and bassists.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="profile-row">
+                    <img src="img/pf5.png" class="profile-img">
+                    <div class="profile-text">
+                        <h2>Bye Bye Badman</h2>
+                        <h5>Debut | January 7, 2011, EP &lt;Bye Bye Badman&gt;</h5>
+                        <p>
+                            Bye Bye Badman is a South Korean indie rock band formed in 2011. 
+                            They are known for their sophisticated sound and stylish melodies, based on various genres such as Britpop, shoegazing, and alternative rock. 
+                            Starting with their debut EP &lt;Bye Bye Badman&gt;, they have released several albums, including &lt;Light Beside You&gt; and &lt;Authentic&gt;. 
+                            With emotional lyrics and a dreamy atmosphere, they have garnered a large fan base. 
+                            The band consists of three members: Jung Bong-gil (main vocal, guitar), Lee Ruri (bass), and Cloud (keyboard, chorus).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="rightcolumn">
+            <div class="card">
+                <h3>Main Menu</h3>
+                <a href="index_en.html" class="fakeimg-link">
+                    <div class="fakeimg">Artist Introduction</div></a>
+
+                <a href="album_en.html" class="fakeimg-link">
+                    <div class="fakeimg">Album Introduction</div></a>
+
+                <a href="poster_en.html" class="fakeimg-link">
+                    <div class="fakeimg">Performance Information</div></a>
+
+                <a href="calendar_en.html" class="fakeimg-link">
+                    <div class="fakeimg">Performance Calendar</div></a>
+
+                <a href="community_en.html" class="fakeimg-link">
+                    <div class="fakeimg">Community</div></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Help</h3>
+                <p><a href="support.html">Support</a></p>
+                <p><a href="guidelines.html">Guidelines</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Language</h3>
+                <p><a href="index.html">Korean</a></p>
+                <p><a href="index_en.html">English</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

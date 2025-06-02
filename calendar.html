@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            padding: 10px;
+            background-color: #f4f4f4;
+        }
+        .header {
+            padding: 10px;
+            background: #ddd;
+        }
+        .logo-left {
+            float: left;
+            width: 300px;
+            margin-top: 5px;
+        }
+        .logo-right {
+            float: right;
+            width: 50px;
+            margin-top: 20px;
+            margin-right: 30px;
+        }
+        .header a {
+            float: right;
+            display: block;
+            color: #c51b1b;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+        a.no-style {
+            all: unset;
+            display: inline;
+            cursor: pointer;
+}
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            /*background-color: #f1f1f1;;*/
+            padding-left: 20px;
+        }
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            height: auto;
+        }
+
+        .profile-row {
+            display: flex;
+            align-items: stretch;
+            gap: 20px; /* 이미지와 텍스트 사이 간격 */
+            height: 100%;
+        }
+
+        .profile-img {
+            height: 100%;
+            width: auto;
+            object-fit: cover;
+            flex-shrink: 0;
+            max-height: 300px; /* 이미지 최대 높이 설정 */
+        }
+
+
+        .profile-text {
+            flex: 1;
+        }
+
+
+        .fakeimg-link {
+            text-decoration: none; /* 링크 밑줄 제거 */
+            display: block;         /* 박스 전체를 클릭 가능하게 만듦 */
+            margin-bottom: 10px;
+        }
+
+        .fakeimg-link .fakeimg {
+            transition: background-color 0.3s;
+            cursor: pointer;
+            color: black;
+        }
+
+        .fakeimg-link:hover .fakeimg {
+            background-color: #888;  /* hover 시 색 변경 */
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .footer {
+            background-color: #d3d3d3;
+            padding: 15px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .footer-container {
+            display: flex;
+            justify-content: left;
+            gap: 100px;
+            flex-wrap: wrap;
+            text-align: left;
+            margin-left: 20px;
+        }
+        .footer-section h3 {
+            margin-bottom: 10px;
+        }
+        .footer-section a {
+            text-decoration: none;
+            color: black;
+        }
+        .footer-section a:hover {
+            text-decoration: underline;
+        }
+        @media screen and (max-width: 800px) {
+            .leftcolumn, .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+
+        }
+
+        @media screen and (max-width: 800px) {
+            .leftcolumn, .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+
+            .profile-row {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .profile-img {
+                width: 100%;
+                height: auto;
+                max-width: 300px;
+            }
+
+            .profile-text {
+                text-align: center;
+            }
+        }
+
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 1px;
+            background-color: #223;
+            border: 1px solid #223;
+            margin-top: 20px;
+        }
+        .day {
+            background-color: #ddd;
+            min-height: 100px;
+            padding: 5px;
+            position: relative;
+        }
+        .day-number {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            font-weight: bold;
+            border: 1px solid #000;
+            padding: 2px 6px;
+            background-color: white;
+            font-size: 12px;
+        }
+        .event {
+            margin-top: 25px;
+            padding: 4px 8px;
+            display: inline-block;
+            border: 1px solid #223;
+            font-size: 14px;
+        }
+        .weekday {
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .weekday.sun {
+            background-color: #f88;
+        }
+        .weekday.sat {
+            background-color: #88f;
+        }
+        .weekday.normal {
+            background-color: #bbb;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="img/logo.png" alt="Logo" class="logo-left">
+        <a href="index2.html" class="no-style"><img src="img/user.png" alt="Logo" class="logo-right"></a>
+
+        <a href="regester.html">회원가입</a>
+        <a href="download.html">다운로드</a>
+        <br><br><br><br><br>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="calendar">
+                <div class="weekday sun">일</div>
+                <div class="weekday normal">월</div>
+                <div class="weekday normal">화</div>
+                <div class="weekday normal">수</div>
+                <div class="weekday normal">목</div>
+                <div class="weekday normal">금</div>
+                <div class="weekday sat">토</div>
+
+                <div class="day"><div class="day-number">1</div></div>
+                <div class="day"><div class="day-number">2</div></div>
+                <div class="day"><div class="day-number">3</div></div>
+                <div class="day"><div class="day-number">4</div></div>
+                <div class="day"><div class="day-number">5</div></div>
+                <div class="day"><div class="day-number">6</div></div>
+                <div class="day"><div class="day-number">7</div></div>
+                <div class="day"><div class="day-number">8</div></div>
+                <div class="day"><div class="day-number">9</div><div class="event">유령서점</div></div>
+                <div class="day"><div class="day-number">10</div></div>
+                <div class="day"><div class="day-number">11</div></div>
+                <div class="day"><div class="day-number">12</div></div>
+                <div class="day"><div class="day-number">13</div></div>
+                <div class="day"><div class="day-number">14</div><div class="event">고고학</div></div>
+                <div class="day"><div class="day-number">15</div></div>
+                <div class="day"><div class="day-number">16</div></div>
+                <div class="day"><div class="day-number">17</div></div>
+                <div class="day"><div class="day-number">18</div></div>
+                <div class="day"><div class="day-number">19</div></div>
+                <div class="day"><div class="day-number">20</div></div>
+                <div class="day"><div class="day-number">18</div><div class="event">투비클</div></div>
+                <div class="day"><div class="day-number">22</div></div>
+                <div class="day"><div class="day-number">23</div></div>
+                <div class="day"><div class="day-number">24</div></div>
+                <div class="day"><div class="day-number">25</div></div>
+                <div class="day"><div class="day-number">26</div></div>
+                <div class="day"><div class="day-number">27</div></div>
+                <div class="day"><div class="day-number">28</div></div>
+            </div> 
+        </div>
+
+        <div class="rightcolumn">
+            <div class="card">
+                <h3>Main Menu</h3>
+                <a href="index.html" class="fakeimg-link">
+                    <div class="fakeimg">아티스트 소개</div></a>
+
+                <a href="album.html" class="fakeimg-link">
+                    <div class="fakeimg">앨범 소개</div></a>
+
+                <a href="poster.html" class="fakeimg-link">
+                    <div class="fakeimg">공연 정보</div></a>
+
+                <a href="calendar.html" class="fakeimg-link">
+                    <div class="fakeimg">공연 캘린더</div></a>
+
+                <a href="community.html" class="fakeimg-link">
+                    <div class="fakeimg">커뮤니티</div></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Help</h3>
+                <p><a href="support.html">Support</a></p>
+                <p><a href="guidelines.html">Guidelines</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Language</h3>
+                <p><a href="calendar.html">Korean</a></p>
+                <p><a href="calendar_en.html">English</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
